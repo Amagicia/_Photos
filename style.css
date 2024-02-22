@@ -1,62 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
 * {
   margin: 0;
   padding: 0;
   /* background: #8f5151; */
+  font-family: "Poppins", sans-serif;
 }
-/* #cheak {
-  height: 60%;
-  width: 100vw;
-  padding: 20px 45px;
-  background: #ec1818;
-  display: flex;
-} */
-/* #one,
-#two {
-  font-size: 25px;
-  font-weight: 406;
-  color: rgb(0, 12, 12);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-right: 12px;
+.full {
+  height: 100%;
+  width: 100%;
 }
-#one {
-  border-right: 1px solid rgb(100, 92, 92);
-}  */
 .nav {
+  height: 80px;
+  width: 100vw;
+  background-color: rgb(247, 245, 245);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0px 35px;
 }
-.brand .left {
+/*  */
+.left {
   font-size: 22px;
-  font-weight: 655;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 555;
+  /* background: #dd5757; */
   color: rgb(19, 19, 20);
   display: flex;
-  margin-left: 12px;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  font-size: 24px;
+  padding-right: 24px;
+}
+.brand {
+  font-size: 36px;
+  font-weight: 547;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  margin-right: 78px;
+  font-size: 18px;
+}
+.n {
+  padding-left: 16px;
+}
+.r:hover {
+  color: rgb(48, 48, 216);
+  font-weight: 666;
 }
 .main {
-  /* justify-content: center; */
-  /* align-items: center; */
-  background: rgb(49, 45, 45);
-  /* border: 2px; */
   height: 100%;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 8vh;
 }
 .card {
   height: 370px;
-  /* background: #6ae951; */
-  /* color: rgb(83, 83, 92); */
-  width: 310px;
+  width: 270px;
   overflow: hidden;
   border-radius: 12px;
-  margin-top: 10vh;
-  /* margin-right: 95px; */
-  margin-bottom: 12px;
+  margin-bottom: 24px;
+  margin-right: 8px;
 }
 .card img {
   height: inherit;
@@ -66,4 +78,12 @@
 .card div {
   color: #6ae951;
   font-size: 18px;
+}
+.la {
+  margin-top: 18px;
+  border-top: 1px solid black;
+  padding: 22px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
