@@ -18,7 +18,8 @@ html {
   color: #000;
   /* color: white; */
   /* background-color: #0c0000; */
-  background-color: #c4bcb3;
+  background-color: #838282;
+  /* background-color: #c4bcb3; */
   /* background-color: rgba(231, 230, 230, 0.979); */
   display: flex;
   align-items: center;
@@ -114,7 +115,7 @@ html {
 }
 .n {
   padding-left: 12px;
-  border-left: 2px solid #fff;
+  border-left: 2px solid #0a0a0a;
 }
 /* 
 .input:focus + .input-border {
@@ -187,4 +188,11 @@ html {
   width: 70%;
   margin: auto;
   text-align: center;
+}
+.la span i {
+  font-size: 28px;
+}
+span a {
+  text-decoration: none;
+  color: #fff;
 }
