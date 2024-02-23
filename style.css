@@ -10,7 +10,7 @@ html {
   width: 100%;
 }
 .full {
-  background-color: #000;
+  background-color: #312c2cf1;
 }
 .nav {
   height: auto;
@@ -18,14 +18,14 @@ html {
   color: #000;
   /* color: white; */
   /* background-color: #0c0000; */
-  background-color: #838282;
+  background-color: #c5bdbd;
   /* background-color: #c4bcb3; */
   /* background-color: rgba(231, 230, 230, 0.979); */
   display: flex;
   align-items: center;
   justify-content: space-between;
   /* padding: 0px 35px; */
-  border-bottom: 0.4px solid #fff;
+  /* border-bottom: 0.4px solid #fff; */
   /* padding-bottom: 22px; */
 }
 /*  */
@@ -50,6 +50,7 @@ html {
 .brand {
   font-size: 36px;
   font-weight: 547;
+  color: #030303;
   /* background-color: #fff; */
   display: flex;
   justify-content: center;
@@ -185,14 +186,16 @@ html {
   /* display: flex;
   align-items: center;
   justify-content: center; */
-  width: 70%;
+  width: 80%;
   margin: auto;
   text-align: center;
+  justify-content: center;
 }
 .la span i {
   font-size: 28px;
 }
-span a {
+.ll {
+  font-size: 28px;
   text-decoration: none;
   color: #fff;
 }
