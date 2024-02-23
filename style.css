@@ -5,19 +5,24 @@
   /* background: #8f5151; */
   font-family: "Poppins", sans-serif;
 }
-.full {
+body,
+html {
   height: 100%;
   width: 100%;
 }
 /* nnnn */
+.full {
+  /* height: 100vh;
+  width: 100vw; */
+}
 .nav {
-  height: 80px;
+  height: auto;
   width: 100vw;
   background-color: rgb(247, 245, 245);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 35px;
+  /* padding: 0px 35px; */
 }
 /*  */
 .left {
@@ -26,29 +31,40 @@
   /* background: #dd5757; */
   color: rgb(19, 19, 20);
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+  /* padding:; */
+  width: 30%;
 }
 .logo {
   font-size: 24px;
-  padding-right: 24px;
+  /* padding-right: 24px; */
+  margin-right: 22px;
+  margin-left: 42px;
+}
+.p {
 }
 .brand {
   font-size: 36px;
   font-weight: 547;
+  /* background-color: #fff; */
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 30%;
 }
 .right {
   display: flex;
+  /* background-color: pink; */
+  width: 30%;
   align-items: start;
-  justify-content: start;
-  margin-right: 78px;
+  justify-content: space-evenly;
+  /* justify-content: start; */
+  /* margin-right: 78px; */
   font-size: 18px;
 }
 .n {
-  padding-left: 16px;
+  /* padding-left: 16px; */
 }
 .r:hover {
   color: rgb(48, 48, 216);
@@ -68,23 +84,29 @@
   width: 270px;
   overflow: hidden;
   border-radius: 12px;
-  margin-bottom: 24px;
+  margin-bottom: 54px;
   margin-right: 8px;
 }
 .card img {
-  height: inherit;
-  width: inherit;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 .card div {
-  color: #6ae951;
+  /* color: #6ae951; */
   font-size: 18px;
 }
 .la {
-  margin-top: 18px;
-  border-top: 1px solid black;
+  font-size: 18px;
+  margin-top: 28px;
+  border-top: 2px solid rgb(153, 152, 152);
   padding: 22px 0px;
-  display: flex;
+  font-weight: 555;
+  letter-spacing: 3.5px;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  width: 70%;
+  margin: auto;
+  text-align: center;
 }
