@@ -15,7 +15,7 @@
 arr=[
     // {name:"John",img:"https://images.unsplash.com/photo-1620389702593-ca133a35cae9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE5fHxkZXByZXNzZWR8ZW58MHx8MHx8fDA%3D"},
     // {name:"John",img:"https://images.unsplash.com/photo-1705642230267-f504b922b19c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwODc2OTIyMA&ixlib=rb-4.0.3&q=80&w=1080"},
-    {name:"John",img:"https://source.unsplash.com/random?"},
+    // {name:"lorem",img:"https://source.unsplash.com/random?"},
     // {name:"John",img:"https://source.unsplash.com/random?v=14"},
     // {name:"John",img:"https://images.unsplash.com/photo-1628922401672-af981f04ef40?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGRlcHJlc3NlZHxlbnwwfHwwfHx8MA%3D%3D"},
     // {name:"John2",img:"https://images.unsplash.com/photo-1700895718129-2b5651e9f8e5?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
@@ -32,7 +32,7 @@ function show(){
     arr.forEach(function(obj){
         clutter+=`<div class="card">
         <img class="pic" src="${obj.img}" alt="img" />
-        <div>lorem uyqw ${obj.name}</div>
+        <div>Nice ${obj.name}</div>
       </div>`;
         // console.log(clutter)
     });
@@ -42,13 +42,14 @@ function show(){
             for (var i = start; i <= end; i++) {
                 // var non=`https://source.unsplash.com/italy`
                 var non=`https://source.unsplash.com/random?v=${i}`
+                var nnn=`Image ${i}`
                 
-                var myDictionary = { name: 'value1',img: non };
+                var myDictionary = { name:nnn,img: non };
                 arr.push(myDictionary);
             }
     console.log(arr);
         }
-        appendNumbersToList(0,22);
+        appendNumbersToList(1,24);
 show();
 
   // Function to reload the page
