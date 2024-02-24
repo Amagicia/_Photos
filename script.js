@@ -1,46 +1,4 @@
 
-for (var i = 1; i <= 10; i++) {
-    console.log(i);
-}
-
-
-
-
-
-console.log("Welcome to Programiz!");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // Function to update the src attribute with a new random Unsplash image
-    // function updateRandomImage() {
-    //     // Create a unique timestamp to ensure a new image is fetched
-    //     // const timestamp = new Date().getTime();
-    //     var t = Math.floor(Math.random() * 10) + 1;
-        
-    //     // Get the image element by its id
-    //     var imageElement = document.getElementById('randomImage');
-
-    //     // Update the src attribute with a new random Unsplash image URL
-    //     var app= imageElement.src = `https://source.unsplash.com/random?=${t}`;
-    //     document.querySelector(".desi").innerHTML=app;
-
-    // }
-    
-    // // Call the function to set the initial image and update it when needed
-    // updateRandomImage();
-
 
     // {name:"John",img:"https://images.unsplash.com/photo-1533173383261-e7c2432af4ec?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjN8fGRlcHJlc3NlZHxlbnwwfHwwfHx8MA%3D%3D"},
     // {name:"John",img:"https://images.unsplash.com/photo-1602300592242-ef0280b9bf16?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fGRlcHJlc3NlZHxlbnwwfHwwfHx8MA%3D%3D"},
@@ -80,9 +38,6 @@ function show(){
     });
     document.querySelector(".main").innerHTML=clutter;
 }
-    
-                // var myList =arr;
-        // Function to append numbers to the list
         function appendNumbersToList(start, end) {
             for (var i = start; i <= end; i++) {
                 // var non=`https://source.unsplash.com/italy`
@@ -93,40 +48,45 @@ function show(){
             }
     console.log(arr);
         }
-        appendNumbersToList(0,26);
+        appendNumbersToList(0,22);
 show();
 
-
-
-
-
   // Function to reload the page
-  function refreshPage() {
-    location.reload();
-    window.scrollTo(0, 0);
-  }
-
-  // Add a click event listener to the button
-  document.getElementById('refreshButton').addEventListener('click', refreshPage);
+//   function refreshPage() {
+    // location.reload();
+    // window.scrollTo(0, 0);
+//   }
+function refr(){
+    location.href='index.html'
+}
+//   document.getElementById('refreshButton').addEventListener('click', refreshPage);
+  document.getElementById('refreshButton').addEventListener('click', refr);
 // </script>
 
 
-// {/* <script> */}
+// // // {/* <script> */}
 //   const accessKey = 'zixWHD-DrXOtcfBYV1SZSqQqhPldSRq1KIdgNtTw1xw';
-//   const apiUrl = `https://api.unsplash.com/photos/?client_id=${accessKey}`;
+//   const apiUrl = `https://api.unsplash.com/photos/?client_id=${accessKey}&per_page=40`;
 
 //   async function fetchPhotos() {
 //     try {
 //       const response = await fetch(apiUrl);
 //       const photos = await response.json();
-
+// console.log(photos)
 //       const gallery = document.getElementById('gal');
 //       photos.forEach(photo => {
+//         const onediv = document.createElement('div');
 //         const imgElement = document.createElement('img');
+//         const captionElement = document.createElement('div');
+//         captionElement.textContent = photo.description || 'No description available';
+//         captionElement.classList.add('card');
 //         imgElement.src = photo.urls.small;
 //         imgElement.alt = photo.alt_description;
-//         imgElement.classList.add('photo');
-//         gallery.appendChild(imgElement);
+//         imgElement.download = photo.links.download;
+//         imgElement.classList.add('card');
+//         onediv.appendChild(imgElement);
+//         gallery.appendChild(onediv);
+//         console.log(imgElement)
 //       });
 //     } catch (error) {
 //       console.error('Error fetching photos:', error.message);
@@ -135,3 +95,30 @@ show();
 
 //   // Call the function to fetch photos
 //   fetchPhotos();
+
+
+
+// const maxImages = 10; // Set the maximum number of random images to fetch
+
+// function fetchRandomPhotos(maxImages) {
+//   const photoContainer = document.getElementById('gal');
+
+//   for (let i = 0; i < maxImages; i++) {
+//     const imgElement = document.createElement('img');
+//     imgElement.src = `https://placekitten.com/300/200?random=${i + 1}`; // Placeholder image URL
+//     imgElement.alt = 'Random Photo';
+
+//     const captionElement = document.createElement('p');
+//     captionElement.textContent = `Image ${i + 1}`;
+
+//     const photoWrapper = document.createElement('div');
+//     photoWrapper.classList.add('photo');
+//     photoWrapper.appendChild(imgElement);
+//     photoWrapper.appendChild(captionElement);
+
+//     photoContainer.appendChild(photoWrapper);
+//   }
+// }
+
+// // Call the function to fetch and display a maximum of 10 random photos
+// fetchRandomPhotos(maxImages);

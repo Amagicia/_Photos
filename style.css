@@ -6,9 +6,10 @@
 }
 body,
 html {
-  transition: scroll-behavior 3s ease-in;
   height: 100%;
   width: 100%;
+  scroll-behavior: smooth;
+  transition: scroll-behavior 3s ease-in;
 }
 .full {
   background-color: #312c2cf1;
@@ -70,6 +71,16 @@ html {
   font-size: 18px;
 }
 /* search */
+#gal {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#gal img {
+  object-fit: cover;
+}
 .form-control {
   background-color: red;
   display: inline-block;
@@ -119,32 +130,7 @@ html {
   padding-left: 12px;
   border-left: 2px solid #0a0a0a;
 }
-/* 
-.input:focus + .input-border {
-  width: 100%;
-}
 
-.form-control {
-  position: relative;
-  --width-of-input: 300px;
-} */
-
-/* .input-alt {
-  font-size: 0.5rem;
-  padding-inline: 0.5em;
-  padding-block: 0.3em;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}  */
-
-/* .input-border-alt {
-  height: 3px;
-  background: linear-gradient(90deg, #ff6464 0%, #ffbf59 50%, #47c9ff 100%);
-  transition: width 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-} */
-
-/* .input-alt:focus + .input-border-alt {
-  width: 100%;
-} */
 .r:hover {
   color: rgb(48, 48, 216);
   font-weight: 666;
@@ -159,16 +145,17 @@ html {
   margin-top: 8vh;
 }
 .card {
-  height: 370px;
+  height: 400px;
   width: 270px;
   overflow: hidden;
   border-radius: 12px;
-  margin-bottom: 54px;
+  margin-bottom: 34px;
   margin-right: 8px;
 }
 .card img {
-  height: 100%;
+  height: 90%;
   width: 100%;
+  border-radius: 12px;
   object-fit: cover;
 }
 .card div {
@@ -225,6 +212,7 @@ html {
   /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
   margin-bottom: 22px;
   font-family: "Courier New", Courier, monospace;
+  scroll-behavior: smooth;
 }
 #refreshButton:hover {
   font-weight: 666;
@@ -237,3 +225,9 @@ html {
   height: 100%;
   width: 100%;
 } */
+.caption {
+  text-align: start;
+  margin-top: 5px;
+  font-size: 16px;
+  color: white;
+}
