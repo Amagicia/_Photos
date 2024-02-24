@@ -56,19 +56,8 @@ console.log("Welcome to Programiz!");
     // {name:"John",img:"https://images.unsplash.com/photo-1515472071456-47b72fb3caff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2FkfGVufDB8fDB8fHww"},
 arr=[
     // {name:"John",img:"https://images.unsplash.com/photo-1620389702593-ca133a35cae9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE5fHxkZXByZXNzZWR8ZW58MHx8MHx8fDA%3D"},
+    // {name:"John",img:"https://images.unsplash.com/photo-1705642230267-f504b922b19c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwODc2OTIyMA&ixlib=rb-4.0.3&q=80&w=1080"},
     {name:"John",img:"https://source.unsplash.com/random?"},
-    // {name:"John",img:"https://source.unsplash.com/random?v=2"},
-    // {name:"John",img:"https://source.unsplash.com/random?v=3"},
-    // {name:"John",img:"https://source.unsplash.com/random?v=4"},
-    // {name:"John",img:"https://source.unsplash.com/random?v=5"},
-    // {name:"John",img:"https://source.unsplash.com/random?v=6"},
-    // {name:"John",img:"https://source.unsplash.com/random?v=7"},
-    // {name:"John",img:"https://source.unsplash.com/random?v=8"},
-    // {name:"John",img:"https://source.unsplash.com/random?v=9"},
-    // {name:"John",img:"https://source.unsplash.com/random?v=10"},
-    // {name:"John",img:"https://source.unsplash.com/random?v=11"},
-    // {name:"John",img:"https://source.unsplash.com/random?v=12"},
-    // {name:"John",img:"https://source.unsplash.com/random?v=13"},
     // {name:"John",img:"https://source.unsplash.com/random?v=14"},
     // {name:"John",img:"https://images.unsplash.com/photo-1628922401672-af981f04ef40?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGRlcHJlc3NlZHxlbnwwfHwwfHx8MA%3D%3D"},
     // {name:"John2",img:"https://images.unsplash.com/photo-1700895718129-2b5651e9f8e5?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
@@ -96,6 +85,7 @@ function show(){
         // Function to append numbers to the list
         function appendNumbersToList(start, end) {
             for (var i = start; i <= end; i++) {
+                // var non=`https://source.unsplash.com/italy`
                 var non=`https://source.unsplash.com/random?v=${i}`
                 
                 var myDictionary = { name: 'value1',img: non };
@@ -103,5 +93,45 @@ function show(){
             }
     console.log(arr);
         }
-        appendNumbersToList(50,100);
+        appendNumbersToList(0,26);
 show();
+
+
+
+
+
+  // Function to reload the page
+  function refreshPage() {
+    location.reload();
+    window.scrollTo(0, 0);
+  }
+
+  // Add a click event listener to the button
+  document.getElementById('refreshButton').addEventListener('click', refreshPage);
+// </script>
+
+
+// {/* <script> */}
+//   const accessKey = 'zixWHD-DrXOtcfBYV1SZSqQqhPldSRq1KIdgNtTw1xw';
+//   const apiUrl = `https://api.unsplash.com/photos/?client_id=${accessKey}`;
+
+//   async function fetchPhotos() {
+//     try {
+//       const response = await fetch(apiUrl);
+//       const photos = await response.json();
+
+//       const gallery = document.getElementById('gal');
+//       photos.forEach(photo => {
+//         const imgElement = document.createElement('img');
+//         imgElement.src = photo.urls.small;
+//         imgElement.alt = photo.alt_description;
+//         imgElement.classList.add('photo');
+//         gallery.appendChild(imgElement);
+//       });
+//     } catch (error) {
+//       console.error('Error fetching photos:', error.message);
+//     }
+//   }
+
+//   // Call the function to fetch photos
+//   fetchPhotos();
