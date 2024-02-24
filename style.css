@@ -199,3 +199,9 @@ html {
   text-decoration: none;
   color: #fff;
 }
+#ran {
+  width: 280px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 15px;
+}
